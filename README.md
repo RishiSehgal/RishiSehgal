@@ -5,7 +5,7 @@
 
 <!-- TYPING ANIMATION -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&multiline=false&width=700&lines=Building+AI+systems+that+actually+work.;Reinforcement+Learning+%7C+RAG+%7C+LLM+Pipelines;Northeastern+University+%E2%80%94+Applied+AI+%26+ML;Turning+research+into+production-grade+code." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&multiline=false&width=700&lines=Building+AI+systems+that+actually+work.;6-Agent+Equity+Research+%7C+AlphaLens;Reinforcement+Learning+%7C+RAG+%7C+LangGraph;Northeastern+University+%E2%80%94+Applied+AI+%26+ML" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -49,6 +49,26 @@ class RishiSehgal:
 ---
 
 ## 🚀 Featured Projects
+
+### 📈 [AlphaLens — Multi-Agent AI Equity Research System](https://github.com/RishiSehgal/alphalens)
+> *LangGraph · Multi-Agent · RAG · Financial AI · Gemini · ChromaDB*
+
+A production-grade, 6-agent LangGraph system that replicates a full investment research desk in software — each agent maps to a real analyst role, collaborates via typed shared state, and calls live financial APIs.
+
+- **Architecture**: 6 specialized agents — Junior Analyst, Research Associate, Quant Analyst, Risk Officer, Senior Analyst, Editor — with parallel fan-out/fan-in execution and typed shared state
+- **Live Data Integrations**: SEC EDGAR, Alpha Vantage, FRED, yfinance — with 4× exponential backoff and graceful degradation
+- **RAG Pipeline**: ChromaDB over SEC 10-K filings using 3,072-dim Gemini embeddings; Verification agent cross-checks narrative vs. quant data; achieved **Recall@5 = 1.00** and **Numerical Accuracy = 1.00** on AAPL/NVDA golden eval set
+- **Quant Engine**: 3-stage DCF valuation (bear/base/bull), Monte Carlo simulation (10K paths, GBM), RSI/MACD technicals, Sharpe/Sortino ratios, options Greeks surface, 9-category risk scanner
+- **Features**: Multi-ticker comparison, earnings transcript analysis (Whisper STT → chunk → embed), unusual options activity scanner, PDF report export, grounded Q&A with interactive charts
+
+[![View Project](https://img.shields.io/badge/View_Project-181717?style=for-the-badge&logo=github)](https://github.com/RishiSehgal/alphalens)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat&logo=databricks&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Gemini_API-4285F4?style=flat&logo=google&logoColor=white)
+![SEC EDGAR](https://img.shields.io/badge/SEC_EDGAR-003087?style=flat&logo=data:image/png;base64,&logoColor=white)
+
+---
 
 ### 🎓 [MentorIQ — RL-Powered Student Retention System](https://github.com/RishiSehgal/mentoriq-rl-student-retention)
 > *Reinforcement Learning · Multi-Agent · NumPy · Streamlit*
@@ -103,6 +123,8 @@ An end-to-end RAG pipeline that ingests live news articles, builds semantic sear
 
 ### Frameworks & Tools
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-0D1B2A?style=for-the-badge&logo=langchain&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=for-the-badge&logo=databricks&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -185,18 +207,3 @@ I'm always open to collaborating on interesting AI/ML projects, discussing resea
 *"The best way to predict the future is to build it."*
 
 </div>
-
-<!--
-**RishiSehgal/RishiSehgal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
